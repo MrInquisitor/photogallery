@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang ="en">
+<!--Head for the photogallery assingment title: TK Photography-->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport"  content="width=device-width,initial-scale-1">
+        <meta name="author" content="Seth Choate">
+        <title>Tk Photography</title>
+        <link rel="stylesheet" href="./photogallery/css/styles.css">
+    </head>
+        <body>
+            <header>
+        <!--h1 for use in the header above the nav-->
+                <h1>TK Photography</h1>
+            </header>    
+            <!--nav menu using ul-->
+            <nav>
+                <ul>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Gallery">Gallery</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <li><a href="#top">top</a></li>
+                </ul>
+            </nav>
+            <main>
+                <!--First Section-->
+                <section class ="aboutSection" id="About">
+                <!--h2 for about area-->
+                    <h2>About</h2>
+                <!--about area content could use a dd or an h3/h4 and a p-->
+                    <p>Hello!</p>
+                    <p>I'm TK and I'm a photographer. I love looking at life through the lens of my camera. Landscape photography is my speciality and it's taken me all over the world.</p>
+                <!--Gallery h2 for gallery part of first section-->
+                    <h2 id="Gallery">Gallery</h2>
+                <!--p inside first section style together with about p-->
+                    <p>Here are some highlights of my work. The locations and year are in the caption.</p>
+                </section>
+                <!--Gallery section-->
+                <div class="gallerySection">
+                    <!--using Figure and figcaption to place imgs and give them "titles"--> 
+                    <figure><!--Needs class?-->
+                        <img src="imgs/Chile.png" alt="Chile Landscape"><!--Chile.png-->
+                        <figcaption class="bottomWhite">Chile, 2001</figcaption> <!--bottom and white-->
+                    </figure> 
+
+                    <figure>
+                        <img src="imgs/Guatemala.png" alt="Guatemala Landscape"><!--Guatemala.png-->
+                        <figcaption class="topWhite">Guatemala, 1997</figcaption><!--top and white-->
+                    </figure>
+
+                    <figure>  
+                        <img src="imgs/Hawaii.png" alt="Hawaii Landscape"><!--Hawaii.png-->
+                        <figcaption class="bottomWhite">Hawaii, 2010</figcaption><!--bottom and white-->
+                    </figure>
+
+                    <figure>
+                        <img src="imgs/Iran.png" alt="Iran Landscape"><!--Iran.png-->
+                        <figcaption class="top">Iran, 1999</figcaption><!--Top-->
+                    </figure>
+
+                    <figure>
+                        <img src="imgs/Ireland.png" alt="Ireland Lanscape"><!--Ireland.png-->
+                        <figcaption class="top">Ireland, 2012</figcaption><!--top-->
+                    </figure>
+
+                    <figure>
+                        <img src="imgs/Italy.png" alt="Italy Landscape"><!--Italy.png-->
+                        <figcaption class="bottom">Italy, 2015</figcaption><!--bottom-->
+                    </figure>
+
+                    <figure>
+                        <img src="imgs/Moab-Desert.png" alt="Moad Desert Lanscape"><!--Moab-Desert.png-->
+                        <figcaption class="bottomWhite">Moab Desert, 2020</figcaption><!--bottom and white-->
+                    </figure>
+
+                    <figure>
+                        <img src="imgs/Rocky-Mountains.png" alt="Rocky Mountains Landscape"><!--Rocky-Mountains.png-->
+                        <figcaption class="top">Rocky Mountains, 2009</figcaption><!--top-->
+                    </figure>
+
+                    <figure>
+                        <img src="imgs/Switzerland.png" alt="Switzerland Lanscape"><!--Switzerland.png-->
+                        <figcaption class="top">Switzerland, 2014</figcaption><!--top-->
+                    </figure>
+
+                    <figure>
+                        <img src="imgs/UK.png" alt="UK Landscape"><!--UK.png-->
+                        <figcaption class="top">UK, 2005</figcaption><!--top-->
+                    </figure>
+
+                    <figure>
+                        <img src="imgs/USA.png" alt="USA Landscape"><!--USA.png-->
+                        <figcaption class="top">USA, 2021</figcaption><!--top-->
+                    </figure>
+
+                    <figure>
+                        <img src="imgs/Wyoming.png" alt="Wyoming Landscape"><!--Wyoming.png-->
+                        <figcaption class="topWhite">Wyoming, 2021</figcaption><!--top and white-->
+                    </figure>
+                </div>
+                <!--End of gallery section-->
+            </main>
+            <!--third Section for contact forms-->
+            <section class="contactForm" id="Contact">
+            <!--h2 for contact-->
+                <h2>Contact</h2>
+            <!--p for finstructions-->
+                <p>Please fill out this form and I'll connect with you soon.</p>
+            <!--Your contact information-->
+                <!--form for inputting contact information-->
+                <form class="contactForm">
+                    <h5>Name</h5>
+                    <input type="text" id="name" name="name" placeholder="Your Full Name"><!--name input--><br><br>
+                    <h5>Email</h5>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address"><!--email input--><br><br>
+                    <h5>Message</h5> 
+                    <input type="text" id="message" name="message" placeholder="What can I help you with?"><br><br><!--input for messages-->
+                    <input type="submit" class="submitButton" value="Submit"><!--submit button-->
+                </form>
+            </section>
+            <!--footer-->
+            <footer>
+                <p><small>Copyright 2021 TK Photography</small></p>
+            </footer>
+        <!--End of index.html-->
+                
+        </body>
+</html>

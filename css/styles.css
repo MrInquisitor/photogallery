@@ -1,0 +1,152 @@
+/* Global styles*/
+html { /* Setting the back gorund of the html to black */
+    background-color: #000000;
+    font-weight: 700;
+}
+/* setting font sizes for the webpage  */
+p {
+    font-size: 1.25em;
+}
+figcaption, label, input, small {
+    font-size: 1em;
+}
+h1, h2, h5, li, figcaption,  input::placeholder, .submitButton {
+    text-transform: uppercase;
+}
+h1 {
+    color: #007d7b;
+    font-size : 3em;
+    margin: 0 auto;
+}
+h2 {
+    font-size : 2em;
+    text-align: center;
+    margin: 5px auto;
+}
+body { /* Setting the body tag to have a white background and a width of 80% */
+    font-family: Arial, Helvetica, sans-serif; /*setting the font for the webpage */
+    margin: 0 auto;  
+}
+main {
+    background-color: #ffffff;
+}
+header {
+    background-color: #ffffff;
+}
+nav, .contactForm, footer { /*setting the background color of the nav bar, the contactForm and footer back to black as well as centering the text*/
+    color:#ffffff;
+    background-color: #000000;
+    text-align: center;
+}
+/*Styling the nav bar */
+ul { /* Removing the styles from the ul in the nav bar */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;  
+}
+li {
+    display: inline-flex;
+}
+a {
+    padding: 15px 35px;
+    color:#ffffff; 
+    font-weight: bold;
+    text-decoration: none;
+}
+[href="#top"] { /*moving the top button to bottom right corner */
+    position: fixed;
+    z-index: 1;
+    background-color:rgba(0,0,0,.5);
+    margin:auto;
+    bottom: 0px;
+    right: 0px;
+}
+a:hover { /*adds a background color when hovering over the link */
+    background-color: #007d7b;
+}
+a:focus { /*adds an outline around the link when "focused" on it*/
+    outline: 5px #007d7b;
+}
+a:active { /*adds an underline when clicking on the links*/
+    text-decoration: underline;
+}
+a:visited {
+    color:#007d7b;
+}
+/* End of nav bar */
+.aboutSection {
+    padding: 10px;
+}
+figure {/*setting a position relative for moving the figcaption*/
+    position: relative;
+    text-align: center; 
+    font-weight: bold;
+}
+figcaption[class*="top"] { /* positioning and centering the figcaptions*/
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+figcaption[class*="bottom"] { /* positioning and centering the figcaptions*/
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+    transform: translate(-50%, -50%) 
+}
+figcaption[class*="White"]
+{
+    color: #ffffff;
+}
+input {/* making the input boxes larger*/
+    width: 90%;  
+}
+h5 { /* Changing the alignment of the h5s I used for the input boxes*/
+    text-align: left;
+    margin: 1px;
+    transform: translateX(5%);
+}
+.submitButton {/*styling the submit button within the form*/
+    background-color: #007d7b;
+    border-radius: 5px;
+    color: #ffffff;
+}
+input::placeholder{ /*changing the color of the placeholder text in the input boxes*/
+    color: #007d7b;
+    font-weight: bold;
+}
+
+/* mobile first up to 485px in width*/
+h1 {
+    text-align: center;
+}
+body {
+    min-width: 485px;
+    display: grid; /* setting a 1 column grid within body */
+    grid-template-columns: 1fr;
+    justify-content: center;
+}
+/* First media Query for screen size of */
+@media (min-width: 880px) {
+    h1{
+        text-align: left;
+    }
+    .gallerySection {
+        display: grid; /* setting a 2 column grid within body */
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+    }
+}
+@media (min-width: 1300px) {
+    ul {
+       text-align: right;
+    }
+    body {
+        max-width: 1300px;
+    }
+    .gallerySection {
+        display: grid; /* setting a 3 column grid within body */
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+    }
+}
